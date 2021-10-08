@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const { execSync } = require('child_process');
+// const { execSync } = require('child_process');
 
 const fakeRequest = require('supertest');
 const app = require('../lib/app');
@@ -8,25 +8,7 @@ const app = require('../lib/app');
 
 describe('app routes', () => {
   describe('routes', () => {
-    // let token;
 
-    beforeAll(async () => {
-      execSync('npm run setup-db');
-
-      //   await client.connect();
-      //   const signInData = await fakeRequest(app)
-      //     .post('/auth/signup')
-      //     .send({
-      //       email: 'jon@user.com',
-      //       password: '1234'
-      //     });
-
-      //   token = signInData.body.token; // eslint-disable-line
-      // }, 10000);
-
-      // afterAll(done => {
-      //   return client.end(done);
-    });
 
     test('returns city data', async () => {
 
