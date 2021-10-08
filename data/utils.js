@@ -36,3 +36,5 @@ function grabReviewData(reviewData) {
 module.exports = {
     grabLocationData, grabWeatherData, grabReviewData
 };
+
+//functions done
